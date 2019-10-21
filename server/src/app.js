@@ -5,6 +5,7 @@ const moment = require("moment");
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+const cors = require("cors");
 const apiRoutes = require("./api/index");
 
 const app = express();
@@ -28,6 +29,9 @@ if (process.env.NODE_ENV === "production") {
   // setup the logger
   app.use(morgan("combined", { stream: accessLogStream }));
 }
+
+// enable CORS
+app.use(cors());
 
 // app setup
 app.use(
