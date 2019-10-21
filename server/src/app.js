@@ -3,7 +3,6 @@ const rfs = require("rotating-file-stream");
 const path = require("path");
 const moment = require("moment");
 const express = require("express");
-const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const cors = require("cors");
 const apiRoutes = require("./api/index");
@@ -35,11 +34,11 @@ app.use(cors());
 
 // app setup
 app.use(
-  bodyParser.urlencoded({
+  express.urlencoded({
     extended: true
   })
 );
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(apiRoutes);
 
 // serves SPA
