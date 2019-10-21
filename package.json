@@ -4,10 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "clean": "rimraf server/app-build",
-        "dev": "npm run clean && parcel watch app/index.html --out-dir server/app-build & nodemon server/index.js",
-        "build-ui": "npm run clean && parcel build app/index.html --out-dir server/app-build",
-        "start": "npm run clean && parcel build app/index.html --out-dir server/app-build && node server/index.js"
+        "clean": "rimraf server/client-build",
+        "dev": "npm run clean && parcel watch client/index.html --out-dir server/client-build & nodemon server/index.js",
+        "build-ui": "npm run clean && parcel build client/index.html --out-dir server/client-build",
+        "start": "npm run clean && parcel build client/index.html --out-dir server/client-build && node server/index.js"
     },
     "author": "Noah",
     "license": "MIT",

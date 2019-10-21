@@ -2,7 +2,7 @@ const app = require("../app")
 
 function valueAPI() {
     app.get("/api/value", (req, res) => {
-        return res.send("Value from API is 10.")
+        return res.send(`${Math.ceil(Math.random() * 10)} is value fetched from API.`)
     })
 }
 
