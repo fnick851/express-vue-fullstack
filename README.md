@@ -1,6 +1,4 @@
-# Minimalistic Express + Vue fullstack app
-
-Using Nodemon and Parcel:
+# Minimalistic Express + Vue fullstack boilerplate
 
 ```bash
 # development
@@ -12,3 +10,8 @@ npm run build-ui
 # deployment
 npm run start
 ```
+
+## Features
+
+- Hot reloading with `nodemon` and `parcel`
+- Logging with `morgan`
