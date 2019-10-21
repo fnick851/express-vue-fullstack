@@ -5,13 +5,15 @@
     "main": "index.js",
     "scripts": {
         "clean": "rimraf server/app-build",
-        "dev": "parcel watch app/index.html --out-dir server/app-build & npx nodemon server/index.js",
+        "dev": "npm run clean && parcel watch app/index.html --out-dir server/app-build & nodemon server/index.js",
+        "build-ui": "npm run clean && parcel build app/index.html --out-dir server/app-build",
         "start": "npm run clean && parcel build app/index.html --out-dir server/app-build && node server/index.js"
     },
     "author": "Noah",
     "license": "MIT",
     "devDependencies": {
         "@vue/component-compiler-utils": "^3.0.0",
+        "nodemon": "^1.19.4",
         "parcel-bundler": "^1.12.4",
         "rimraf": "^3.0.0",
         "vue-hot-reload-api": "^2.3.4",
