@@ -24,8 +24,10 @@
     "body-parser": "^1.19.0",
     "core-js": "^3.3.2",
     "express": "^4.17.1",
+    "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "regenerator": "^0.14.2",
+    "rotating-file-stream": "^1.4.6",
     "vue": "^2.6.10"
   }
 }
