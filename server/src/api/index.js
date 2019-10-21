@@ -1,9 +1,9 @@
-const valueAPI = require("./valueAPI")
-const addAPI = require("./addAPI")
+const express = require("express");
+const router = express.Router();
+const value = require("./routes/value");
+const add = require("./routes/add");
 
-function setup() {
-    valueAPI()
-    addAPI()
-}
+router.use("/api", value);
+router.use("/api", add);
 
-module.exports = setup
+module.exports = router;
