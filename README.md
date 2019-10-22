@@ -16,3 +16,4 @@ npm run start
 - Hot reloading with `nodemon` and `parcel`
 - Logging with `morgan`
 - Experimenting with `@vue/composition-api`
+- `Objection.js` ORM
