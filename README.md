@@ -1,4 +1,4 @@
-# Minimalistic Express + Vue fullstack boilerplate
+# Express + Vue fullstack boilerplate
 
 ```bash
 # development
@@ -15,3 +15,4 @@ npm run start
 
 - Hot reloading with `nodemon` and `parcel`
 - Logging with `morgan`
+- Experimenting with `@vue/composition-api`
