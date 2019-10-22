@@ -1,10 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const login = require("../../controller/user")
+const { signup, login } = require("../../controller/user")
 
-router.post("/signup", (req, res) => {
-    return res.send("Not implemented yet.")
-})
+router.post("/signup", signup)
 
 router.post("/login", login)
 

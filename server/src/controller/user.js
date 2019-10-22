@@ -1,6 +1,10 @@
 const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 
+const signup = (req, res) => {
+    return res.send("Not implemented yet.")
+}
+
 const login = (req, res) => {
     const users = [
         {
@@ -58,4 +62,7 @@ const login = (req, res) => {
         })
 }
 
-module.exports = login
+module.exports = {
+    signup,
+    login
+}
