@@ -31,7 +31,7 @@ module.exports = () => {
       table.string("hash");
     });
 
-    const testUser = await User.query().insertGraph({
+    const testUser = await User.query().insert({
       email: "test1@test.com",
       password: "password",
       hash: "$2a$10$huNqSyO/IMOi/c5aQPqpuuNCX04jNrPlqhxrKZcesJ8R3bAq4rqvq"
