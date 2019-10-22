@@ -30,7 +30,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(morgan("combined", { stream: accessLogStream }));
 }
 
-initDb();
+initDb()
+  .then(() => console.log("db initd"))
+  .catch(err => {
+    console.error(err);
+  });
 
 // enable CORS
 app.use(cors());
