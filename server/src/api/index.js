@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const user = require("./routes/user")
-const value = require("./routes/value")
-const add = require("./routes/add")
+const user = require("./route/user")
+const value = require("./route/value")
+const add = require("./route/add")
 
 router.use(user)
 router.use("/api", value)
