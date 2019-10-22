@@ -42,9 +42,9 @@ app.use(express.json())
 app.use(apiRoutes)
 
 // serves SPA
-app.use(express.static(path.resolve(__dirname, "../client-build")))
+app.use(express.static(path.resolve(__dirname, "../../client/build")))
 app.get("*", function(request, response) {
-    response.sendFile(path.resolve(__dirname, "../client-build/index.html"))
+    response.sendFile(path.resolve(__dirname, "../../client/build/index.html"))
 })
 
 // global error handling

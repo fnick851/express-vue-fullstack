@@ -1,36 +1,36 @@
 {
-  "name": "fullstack",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rimraf server/client-build",
-    "dev": "npm run clean && parcel watch client/index.html --out-dir server/client-build & nodemon --exec 'NODE_ENV=development node server/index.js'",
-    "build-ui": "npm run clean && parcel build client/index.html --out-dir server/client-build",
-    "start": "npm run clean && parcel build client/index.html --out-dir server/client-build && node server/index.js"
-  },
-  "author": "Noah",
-  "license": "MIT",
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^3.0.0",
-    "nodemon": "^1.19.4",
-    "parcel-bundler": "^1.12.4",
-    "rimraf": "^3.0.0",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "dependencies": {
-    "axios": "^0.19.0",
-    "bcryptjs": "^2.4.3",
-    "core-js": "^3.3.2",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0",
-    "morgan": "^1.9.1",
-    "regenerator": "^0.14.2",
-    "rotating-file-stream": "^1.4.6",
-    "vue": "^2.6.10"
-  }
+    "name": "fullstack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rimraf client/build",
+        "dev": "npm run clean && parcel watch client/index.html --out-dir client/build & nodemon --exec 'NODE_ENV=development node server/index.js'",
+        "build-ui": "npm run clean && parcel build client/index.html --out-dir client/build",
+        "start": "npm run clean && parcel build client/index.html --out-dir client/build && node server/index.js"
+    },
+    "author": "Noah",
+    "license": "MIT",
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.0.0",
+        "nodemon": "^1.19.4",
+        "parcel-bundler": "^1.12.4",
+        "rimraf": "^3.0.0",
+        "vue-hot-reload-api": "^2.3.4",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "bcryptjs": "^2.4.3",
+        "core-js": "^3.3.2",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.24.0",
+        "morgan": "^1.9.1",
+        "regenerator": "^0.14.2",
+        "rotating-file-stream": "^1.4.6",
+        "vue": "^2.6.10"
+    }
 }
